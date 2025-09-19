@@ -54,10 +54,8 @@
 
 .border:hover {
     color: rgb(10, 37, 61);
-    height: 5px;
     background-color: palevioletred;
     border-radius: 15px;
-    padding: 5px;
 }
 
 .features {
@@ -603,4 +601,5 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
 }
