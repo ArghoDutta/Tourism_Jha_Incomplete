@@ -603,4 +603,68 @@
     color: transparent;
 
 }
+.allslides{
+    min-height: auto;
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+.slider{
+    height: 250px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 97%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);    
+    }
+    100%{
+        transform: translateX(calc(-300px*9));
+    }
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+.slide{
+    height: 250px;
+    width: 330px;
+    display: flex;
+    padding:0px 15px 15px 15px;
+    perspective: 100px;
+}
+.Slidepurpose{
+    width: 100%;
+    transition: transform 1s;
+}
+.Slidepurpose:hover{
+    transform: translateZ(10px);
+}
+.slider::before,
+.slider::after{
+    background: linear-gradient(to right, rgb(15, 1, 1) 0%, #120101 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 1%;
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
 
