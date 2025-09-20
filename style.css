@@ -344,7 +344,7 @@
 .heading2 p {
     font-size: 3rem;
     font-style: italic;
-    font-family: cursive;
+    font-family:'Times New Roman', Times, serif;
     background-image: linear-gradient(to right, red, blue, green);
     -webkit-background-clip: text;
     background-clip: text;
@@ -768,4 +768,5 @@
     font-size: 1.5rem;
     color: white;
 }
+
 
