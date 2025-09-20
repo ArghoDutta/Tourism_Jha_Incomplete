@@ -666,3 +666,106 @@
     top: 0;
     transform: rotateZ(180deg);
 }
+/*==========Heading 4=========*/
+.heading4{
+    color:rgb(1, 13, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading4 p{
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 34px;
+    background-image: linear-gradient(to right, red, blue, green); 
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; 
+}
+/*==========Gallery==========*/
+.gallerycontainer1{
+    display: flex;
+}
+.card-1{
+    width: 22%;
+    height: 211px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    margin: 53px 50px 20px 120px;
+}
+.img1{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: transform .75s;
+}
+.intro1h1{
+    position: absolute;
+    left: 100px;
+    bottom: 4px;
+    font-size: 1.5rem;
+    color: white;
+}
+.card-2{
+    width: 22%;
+    height: 211px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    margin: 53px 50px 20px 90px;
+}
+.img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: transform .75s;
+}
+.intro2h2{
+    position: absolute;
+    left: 100px;
+    bottom: 4px;
+    font-size: 1.5rem;
+    color: white;
+}
+.card-3{
+    width: 22%;
+    height: 211px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    margin:53px 50px 20px 88px;
+}
+.img3{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: transform .75s;
+}
+.intro3h3{
+    position: absolute;
+    left: 100px;
+    bottom: 4px;
+    font-size: 1.5rem;
+    color: white;
+}
+
