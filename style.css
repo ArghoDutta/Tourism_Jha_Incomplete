@@ -15,6 +15,7 @@
 .tour {
     font-size: 2rem;
     padding-right: 10px;
+    padding-top: 15px;
 }
 
 .jha {
@@ -64,7 +65,7 @@
 }
 
 .features a {
-    margin-left: 79px;
+    margin-left: 91px;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
@@ -768,6 +769,7 @@
     font-size: 1.5rem;
     color: white;
 }
+
 
 
 
