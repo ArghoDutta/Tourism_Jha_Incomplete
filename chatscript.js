@@ -3,44 +3,38 @@ const chatContainer = document.querySelector(".chat-container");
 const submitBtn = document.querySelector("#submit");
 const typingIndicator = document.querySelector("#typingIndicator");
 
-// Replace with your actual OpenAI API key
-const OPENAI_API_KEY = "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";
-const API_URL = "https://api.openai.com/v1/chat/completions";
+const GEMINI_API_KEY = "AIzaSyDGrwAmW3ExCh452_SqojpvTp-jKw8J_J8";
+const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
 async function generateResponse(message) {
     const requestOptions = {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${OPENAI_API_KEY}`
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: [
-                {
-                    role: "system",
-                    content: "You are a helpful tourism assistant for Jharkhand, India. Provide information about destinations, festivals, culture, and travel tips in Jharkhand. Give response in a concise and organized manner. And, give quick response."
-                },
-                {
-                    role: "user",
-                    content: message
-                }
-            ],
-            max_tokens: 500,
-            temperature: 0.7
+            contents: [{
+                parts: [{
+                    text: `You are a helpful tourism assistant for Jharkhand, India. Provide information about destinations, festivals, culture, and travel tips in Jharkhand. Give response in a concise and organized manner. User question: ${message}`
+                }]
+            }],
+            generationConfig: {
+                maxOutputTokens: 500,
+                temperature: 0.7
+            }
         })
     };
 
     try {
         showTypingIndicator();
-        const response = await fetch(API_URL, requestOptions);
+        const response = await fetch(`${API_URL}?key=${GEMINI_API_KEY}`, requestOptions);
         const data = await response.json();
         
         if (data.error) {
             throw new Error(data.error.message);
         }
         
-        const aiResponse = data.choices[0].message.content.trim();
+        const aiResponse = data.candidates[0].content.parts[0].text.trim();
         hideTypingIndicator();
         createAiMessage(aiResponse);
         
@@ -162,4 +156,3 @@ prompt.addEventListener("input", function() {
     this.style.height = "auto";
     this.style.height = this.scrollHeight + "px";
 });
-
