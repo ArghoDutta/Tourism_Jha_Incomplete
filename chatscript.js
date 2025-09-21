@@ -4,7 +4,7 @@ const submitBtn = document.querySelector("#submit");
 const typingIndicator = document.querySelector("#typingIndicator");
 
 // Replace with your actual OpenAI API key
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 const API_URL = "https://api.openai.com/v1/chat/completions";
 
 async function generateResponse(message) {
@@ -162,3 +162,4 @@ prompt.addEventListener("input", function() {
     this.style.height = "auto";
     this.style.height = this.scrollHeight + "px";
 });
+
