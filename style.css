@@ -11,6 +11,10 @@
     align-items: center;
     padding-left: 619px;
     height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .tour {
@@ -30,9 +34,9 @@
     color: black;
     display: flex;
     width: 100%;
-    margin: auto;
-    padding: auto;
-    align-items: center;
+    position: fixed;
+    top: 70px;
+    z-index: 999;
 }
 
 .nav-logo {
@@ -75,6 +79,7 @@
 .content video {
     width: 100%;
     height: auto;
+    margin-top: 140px;
 }
 
 .Explore-Jharkhand {
@@ -866,3 +871,4 @@
         justify-content: center;
     }
 }
+
