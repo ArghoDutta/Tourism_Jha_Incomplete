@@ -3,29 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chatbot</title>
+    <title>Jharkhand Tourism AI Assistant</title>
     <link rel="stylesheet" href="chatassistant.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="chat-container">
-
-        <div class="ai-chat-box">
-            <img src="AI BOT.jpg" alt="AI-Image" id="aiImage" width="8%">
-            <div class="ai-chat-area">
-                Hello ! How Can I Help you Today?
+    <div class="chat-header">
+        <div class="header-content">
+            <div class="bot-info">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="bot-details">
+                    <h3>Tourism Assistant</h3>
+                    <span class="status"><i class="fas fa-circle"></i> Online</span>
+                </div>
             </div>
-
+            <div class="header-actions">
+                <button class="action-btn"><i class="fas fa-phone"></i></button>
+                <button class="action-btn"><i class="fas fa-video"></i></button>
+                <button class="action-btn"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
         </div>
-
-
     </div>
+    
+    <div class="chat-container">
+        <div class="ai-chat-box">
+            <div class="message-wrapper">
+                <img src="AI BOT.jpg" alt="AI-Image" class="avatar">
+                <div class="ai-chat-area">
+                    <div class="message-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Hello! I'm your Jharkhand Tourism Assistant. How can I help you explore the beautiful destinations today?
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <div class="message-wrapper">
+                <img src="AI BOT.jpg" alt="AI-Image" class="avatar">
+                <div class="typing-bubble">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="prompt-area">
-        <input type="text" id="prompt" placeholder="Message.......">
-        <button id="submit"><img src="submit.svg" alt=""></button>
-
+        <div class="input-container">
+            <button class="attachment-btn"><i class="fas fa-paperclip"></i></button>
+            <input type="text" id="prompt" placeholder="Ask about destinations, festivals, or travel tips...">
+            <button class="emoji-btn"><i class="fas fa-smile"></i></button>
+            <button id="submit" class="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
     </div>
-    
-    
     
     <script src="chatscript.js"></script>
 </body>
