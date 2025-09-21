@@ -871,4 +871,41 @@
         justify-content: center;
     }
 }
+.chat-assistant {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2e8b57 0%, #1e90ff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+.chat-assistant:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.chat-assistant::before {
+    content: '💬';
+    font-size: 24px;
+    color: white;
+}
+.chat-assistant {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .chat-assistant::before {
+        font-size: 20px;
+    }
+}
+
 
