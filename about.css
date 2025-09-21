@@ -17,6 +17,7 @@ body {
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
+    margin-top: 140px;
 }
 
 .hero-section::before {
