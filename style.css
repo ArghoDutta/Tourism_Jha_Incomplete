@@ -723,6 +723,9 @@
     overflow: hidden;
     margin: 53px 50px 20px 120px;
 }
+.card-1:hover .img1{
+    transform: scale(1.1);
+}
 .img1{
     position: absolute;
     inset: 0;
@@ -750,6 +753,9 @@
     overflow: hidden;
     margin: 53px 50px 20px 90px;
 }
+.card-2:hover .img2{
+    transform: scale(1.1);
+}
 .img2{
     position: absolute;
     inset: 0;
@@ -776,6 +782,9 @@
     background-size: cover;
     overflow: hidden;
     margin:53px 50px 20px 88px;
+}
+.card-3:hover .img3{
+    transform: scale(1.1);
 }
 .img3{
     position: absolute;
@@ -925,6 +934,7 @@
         font-size: 20px;
     }
 }
+
 
 
 
