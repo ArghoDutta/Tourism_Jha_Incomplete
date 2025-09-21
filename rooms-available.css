@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(357deg, rgb(92 219 181 / 50%) 0%, #e5e9eb 100%);
+    min-height: 100vh;
+}
+
+.hero-section {
+    background: linear-gradient(354deg, #13fe7b 0%, #031527 100%);
+    color: #ecc2c2;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    margin-top: 140px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #32cd32;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.room-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #32cd32 0%, #1e90ff 100%);
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.room-card:nth-child(even) {
+    border-left-color: #1e90ff;
+}
+
+.room-card h3 {
+    color: #2e8b57;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.room-details p {
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.room-details span {
+    font-weight: bold;
+    color: #1e90ff;
+    display: inline-block;
+    width: 80px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .rooms-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .room-card {
+        padding: 20px;
+    }
+    
+    .room-details span {
+        width: 70px;
+        font-size: 0.9rem;
+    }
+}
