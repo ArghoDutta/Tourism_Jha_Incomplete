@@ -60,9 +60,8 @@
 }
 
 .border:hover {
-     color:rgb(16, 124, 225);
-    border-bottom: 3px solid rgb(5, 10, 100);
-    height: 10px;
+    color: rgb(229, 35, 96);
+    
 }
 
 .features {
@@ -908,6 +907,7 @@
         font-size: 20px;
     }
 }
+
 
 
 
