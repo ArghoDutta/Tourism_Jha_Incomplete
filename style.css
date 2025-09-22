@@ -88,10 +88,10 @@
 }
 
 .features a {
-    margin-left: 96px;
+    margin-left: 108px;
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .content video {
@@ -934,6 +934,7 @@
         font-size: 20px;
     }
 }
+
 
 
 
