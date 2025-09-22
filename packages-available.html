@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages Available - Tourism Jharkhand</title>
+    <link rel="icon" type="image/png" href="jharkhand govt logo.jpg">
+    <link rel="stylesheet" href="packages-available.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <li class="tour">Jharkhand : Beyond Horizon</li>
+    </div>
+    <div class="navbar">
+        <div class="features">
+            <div><a href="index.html" class="border">Home</a></div>
+            <div><a href="about.html" class="border">About-us</a></div>
+            <div><a href="rooms-available.html" class="border">Rooms-Available</a></div>
+            <div><a href="guide-details.html" class="border">Guide Details</a></div>
+            <div><a href="#" class="border">Schemes Available</a></div>
+            <div><a href="malls-market.html" class="border">Malls & Market</a></div>
+        </div>
+    </div>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Tour Packages Available</h1>
+            <p><i>Explore Jharkhand at your own ease with our curated travel packages</i></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters-section">
+            <h3>Filter Packages</h3>
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Food:</label>
+                    <select id="foodFilter">
+                        <option value="">All</option>
+                        <option value="included">With Food</option>
+                        <option value="excluded">Without Food</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price Range:</label>
+                    <select id="priceFilter">
+                        <option value="">All</option>
+                        <option value="budget">₹5,000 - ₹10,000</option>
+                        <option value="mid">₹10,000 - ₹20,000</option>
+                        <option value="premium">₹20,000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Duration:</label>
+                    <select id="durationFilter">
+                        <option value="">All</option>
+                        <option value="1-2">1-2 Days</option>
+                        <option value="3-5">3-5 Days</option>
+                        <option value="6+">6+ Days</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Rating:</label>
+                    <select id="ratingFilter">
+                        <option value="">All</option>
+                        <option value="4+">4+ Stars</option>
+                        <option value="3+">3+ Stars</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-buttons">
+                <button class="apply-btn" onclick="applyFilters()">Apply Filters</button>
+                <button class="clear-btn" onclick="clearFilters()">Clear Filters</button>
+            </div>
+        </div>
+
+        <div class="packages-grid">
+            <div class="package-card" data-food="included" data-price="mid" data-duration="3-5" data-rating="4+">
+                <h3>Netarhat Hill Station Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 3 Days / 2 Nights</p>
+                    <p><span>Destinations:</span> Netarhat, Betla National Park</p>
+                    <p><span>Guide:</span> Rajesh Kumar Singh</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹12,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★★</div>
+                        <span>(4.8/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="mid" data-duration="3-5" data-rating="4+">
+                <h3>Religious Tour Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 5 Days / 4 Nights</p>
+                    <p><span>Destinations:</span> Deoghar, Parasnath Hills</p>
+                    <p><span>Guide:</span> Priya Sharma</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹18,000 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★☆</div>
+                        <span>(4.5/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="3-5" data-rating="4+">
+                <h3>Adventure Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 4 Days / 3 Nights</p>
+                    <p><span>Destinations:</span>  Hundru Falls, Dalma Hills</p>
+                    <p><span>Guide:</span> Amit Mahato</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹8,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★★</div>
+                        <span>(4.9/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="budget" data-duration="1-2" data-rating="4+">
+                <h3>Wildlife Safari Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 2 Days / 1 Night</p>
+                    <p><span>Destinations:</span> Betla National Park</p>
+                    <p><span>Guide:</span> Sunita Devi</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹7,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★☆</div>
+                        <span>(4.3/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="premium" data-duration="6+" data-rating="4+">
+                <h3>Cultural Heritage Tour</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 6 Days / 5 Nights</p>
+                    <p><span>Destinations:</span> Ranchi, Jamshedpur, Dhanbad</p>
+                    <p><span>Guide:</span> Vikash Oraon</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹22,000 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★★</div>
+                        <span>(4.7/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="3-5" data-rating="4+">
+                <h3>Waterfall Tour Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 3 Days / 2 Nights</p>
+                    <p><span>Destinations:</span> Dassam Falls, Jonha Falls</p>
+                    <p><span>Guide:</span> Deepak Sinha</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹6,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★☆</div>
+                        <span>(4.4/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="mid" data-duration="3-5" data-rating="4+">
+                <h3>Tribal Culture Experience</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 4 Days / 3 Nights</p>
+                    <p><span>Destinations:</span> Khunti, Gumla, Simdega</p>
+                    <p><span>Guide:</span> Kavita Kumari</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹15,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★★</div>
+                        <span>(4.6/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="1-2" data-rating="4+">
+                <h3>Budget Explorer Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 2 Days / 1 Night</p>
+                    <p><span>Destinations:</span> Ranchi City Tour</p>
+                    <p><span>Guide:</span> Ravi Prasad</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹4,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★☆</div>
+                        <span>(4.2/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="3-5" data-rating="3+">
+                <h3>Mountain Trek Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 3 Days / 2 Nights</p>
+                    <p><span>Destinations:</span> Parasnath Hills, Netarhat</p>
+                    <p><span>Guide:</span> Anita Munda</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹5,800 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★☆☆</div>
+                        <span>(3.8/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="premium" data-duration="6+" data-rating="4+">
+                <h3>Luxury Jharkhand Tour</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 7 Days / 6 Nights</p>
+                    <p><span>Destinations:</span> All Major Destinations</p>
+                    <p><span>Guide:</span> Manoj Tiwari</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹35,000 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★★</div>
+                        <span>(4.9/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="1-2" data-rating="3+">
+                <h3>Day Trip Special</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 1 Day</p>
+                    <p><span>Destinations:</span> Hundru Falls</p>
+                    <p><span>Guide:</span> Deepak Sinha</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹2,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★☆☆</div>
+                        <span>(3.5/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="mid" data-duration="3-5" data-rating="4+">
+                <h3>Eco-Tourism Package</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 4 Days / 3 Nights</p>
+                    <p><span>Destinations:</span> Palamau Tiger Reserve</p>
+                    <p><span>Guide:</span> Sunita Devi</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹16,800 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★☆</div>
+                        <span>(4.4/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="1-2" data-rating="3+">
+                <h3>Photography Tour</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 2 Days / 1 Night</p>
+                    <p><span>Destinations:</span> Jonha Falls, Rock Garden</p>
+                    <p><span>Guide:</span> Ravi Prasad</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹5,200 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★☆☆</div>
+                        <span>(3.9/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="premium" data-duration="6+" data-rating="4+">
+                <h3>Complete Jharkhand Explorer</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 8 Days / 7 Nights</p>
+                    <p><span>Destinations:</span> 12+ Major Destinations</p>
+                    <p><span>Guide:</span> Vikash Oraon</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹42,000 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★★</div>
+                        <span>(4.9/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="excluded" data-price="budget" data-duration="3-5" data-rating="3+">
+                <h3>Backpacker Special</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 5 Days / 4 Nights</p>
+                    <p><span>Destinations:</span> Ranchi, Netarhat, Betla</p>
+                    <p><span>Guide:</span> Amit Mahato</p>
+                    <p><span>Food:</span> Not Included</p>
+                    <p><span>Rooms:</span> Not Available</p>
+                    <p><span>Price:</span> ₹9,500 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★☆☆</div>
+                        <span>(3.7/5)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card" data-food="included" data-price="mid" data-duration="1-2" data-rating="4+">
+                <h3>Weekend Getaway</h3>
+                <div class="package-details">
+                    <p><span>Duration:</span> 2 Days / 1 Night</p>
+                    <p><span>Destinations:</span> Patratu Valley, Dimna Lake</p>
+                    <p><span>Guide:</span> Kavita Kumari</p>
+                    <p><span>Food:</span> Included</p>
+                    <p><span>Rooms:</span> Available</p>
+                    <p><span>Price:</span> ₹11,200 per person</p>
+                    <div class="rating">
+                        <span>Rating:</span>
+                        <div class="stars">★★★★☆</div>
+                        <span>(4.1/5)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jharkhand Tourism</h3>
+                <p>Discover the natural beauty, rich culture, and adventure that Jharkhand has to offer.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#festivals">Festivals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 Ranchi, Jharkhand, India</p>
+                <p>📞 +91 651-2446441</p>
+                <p>✉️ info@jharkhnadtourism.gov.in</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jharkhand Tourism. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="chat-assistant" onclick="window.open('chatassistant.html', '_blank')"></div>
+    
+    <script>
+        function applyFilters() {
+            const foodFilter = document.getElementById('foodFilter').value;
+            const priceFilter = document.getElementById('priceFilter').value;
+            const durationFilter = document.getElementById('durationFilter').value;
+            const ratingFilter = document.getElementById('ratingFilter').value;
+            
+            const packages = document.querySelectorAll('.package-card');
+            
+            packages.forEach(package => {
+                let show = true;
+                
+                if (foodFilter && package.dataset.food !== foodFilter) {
+                    show = false;
+                }
+                
+                if (priceFilter && package.dataset.price !== priceFilter) {
+                    show = false;
+                }
+                
+                if (durationFilter && package.dataset.duration !== durationFilter) {
+                    show = false;
+                }
+                
+                if (ratingFilter && package.dataset.rating !== ratingFilter) {
+                    show = false;
+                }
+                
+                if (show) {
+                    package.style.display = 'block';
+                } else {
+                    package.style.display = 'none';
+                }
+            });
+        }
+        
+        function clearFilters() {
+            document.getElementById('foodFilter').value = '';
+            document.getElementById('priceFilter').value = '';
+            document.getElementById('durationFilter').value = '';
+            document.getElementById('ratingFilter').value = '';
+            
+            const packages = document.querySelectorAll('.package-card');
+            packages.forEach(package => {
+                package.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
